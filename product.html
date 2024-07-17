@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Womazing / Товар</title>
+	<meta name="description" content="Вмикай новий сезон із WOMAZING">
+	<meta name="keywords" content="інтернет магазин, одяг, жіночий одяг, інтернет магазин жіночого одягу, інтернет магазин жіночого одягу">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- OG Tags -->
+	<meta property="og:title" content="Womazing">
+	<meta property="og:description" content="Вмикай новий сезон із WOMAZING">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://sitename.ru/img/preview.jpg">
+	<meta property="og:site_name" content="Womazing">
+	<!-- Styling -->
+	<meta name="theme-color" content="#4985FF">
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> 
+</head>
+<body>
+  <div class="wrapper-phone">
+    <div class="overlay-phone" id="overlay-phone"></div>
+    <div id="phone-maodal" class="phone-maodal">
+      <form action="mail.php" class="form-phone js-form" id="form-phone">
+        <button type="button" id="form-phone__close" class="form-phone__close"></button>
+        <h2 class="form-phone__title">Замовити зворотний дзвінок</h2>
+        <input type="text" class="form-phone__input" placeholder="Ім'я" name="name">
+        <input type="email" class="form-phone__input" placeholder="Email" name="email">
+        <input type="tel" class="form-phone__input" placeholder="Телефон" name="tel">
+        <button type="submit" class="btn form-phone__btn" data-submit>Замовити дзвінок</button>
+      </form>
+      <div class="modal-sent" id="modal-sent">
+        <h2 class="modal-sent__title">
+          Чудово! Ми скоро вам передзвонимо.
+        </h2>
+        <button type="button" class="modal-sent__btn">Закрити</button>
+      </div>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="header-top__bg">
+      <div class="container">
+        <div class="header-top header-top__scroll" id="header-top">
+          <a href="index.html" class="logo header-top__logo"></a>
+          <nav class="menu header-top__menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="index.html" class="menu__link">Головна</a></li>
+              <li class="menu__item"><a href="shop.html" class="menu__link">Магазин</a></li>
+              <li class="menu__item"><a href="about.html" class="menu__link">Про нас</a></li>
+              <li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="header-phone">
+            <button type="button" id="phone-btn" class="header-phone__icon phone-btn"></button>
+            <a href="tel:+380635689493" class="header-phone__tel">+38 (063) 568-94-93</a>
+          </div>
+          <div class="basket-menu">
+            <div class="header-basket">
+              <a href="cart.html" class="header-basket__link">
+                <img src="img\\basket.svg" alt="Кошик">
+              </a>
+              <span class="header-basket__namber">1</span>
+            </div>
+            <div class="mobile-menu">
+              <button type="button" class="mobile-menu__btn"><span class="mobile-menu__menutxt">MENU</span></button>
+            </div>
+            <div class="hamburger">
+              <nav>
+                <ul id="hamburger-navigation" class="hamburger-navigation">
+                  <li><a href="index.html">Головна</a></li>
+                  <li><a href="shop.html">Магазин</a></li>
+                  <li><a href="about.html">Про нас</a></li>
+                  <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+              </nav>
+              <button type="button" class="menu-close" id="closeMenu">x</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+	<section class="product" id="product">
+		<div class="container">
+			<h1 class="page-title">
+				Світшот Sweet Shot
+			</h1>
+      <ul class="page-list product-list">
+        <li class="page-list__item">
+          <a href="index.html" class="page-list__link">Головна</a>
+        </li>
+        <li class="page-list__item">
+          <span class="page-list__item_dash">&mdash;</span>
+        </li>
+        <li class="page-list__item">
+          <a href="shop.html" class="page-list__link">Світшоти</a>
+        </li>
+        <li class="page-list__item">
+          <span class="page-list__item_dash">&mdash;</span>
+        </li>
+        <li class="page-list__item">
+          <span class="page-list__link page-list__end">Світшот Sweet Shot</span>
+        </li>
+      </ul>
+      <div class="product-window">
+        <div class="product-window__img">
+          <img src="img/product-img.jpg" alt="Товар">
+        </div>
+        <div class="info">
+          <div class="info__pice">
+            <span class="product__price">
+              $311
+            </span>
+            <span class="product__price product__price_crossed-out">
+              $450
+            </span>
+          </div>
+          <form>
+            <div class="info-size">
+              <h3 class="info-title">Виберіть розмір</h3>
+              <div class="size-wrapper">
+                <input type="radio" class="size__input" id="size1" name="contact" value="S">
+                <label class="size__content" for="size1">S</label>
+            
+                <input type="radio" class="size__input" id="size2" name="contact" value="M">
+                <label class="size__content" for="size2">M</label>
+            
+                <input type="radio" class="size__input" id="size3" name="contact" value="L">
+                <label class="size__content" for="size3">L</label>
+            
+                <input type="radio" class="size__input" id="size4" name="contact" value="XL">
+                <label class="size__content" for="size4">XL</label>
+            
+                <input type="radio" class="size__input" id="size5" name="contact" value="XL">
+                <label class="size__content" for="size5">XL</label>
+              </div>
+            </div>
+            <div class="info-color">
+              <h3 class="info-title">Виберіть колір</h3>
+              <div class="color-wraper">
+                <input type="radio" class="color__input" id="color1" name="color" value="brown">
+                <label class="color__content brown" for="color1"></label>
+
+                <input type="radio" class="color__input" id="color2" name="color" value="grey">
+                <label class="color__content grey" for="color2"></label>
+
+                <input type="radio" class="color__input" id="color3" name="color" value="pink">
+                <label class="color__content pink" for="color3"></label>
+
+                <input type="radio" class="color__input" id="color4" name="color" value="orange">
+                <label class="color__content orange" for="color4"></label>
+              </div>
+            </div>
+            <div class="info-basket">
+              <input type="number" min="1" value="1" class="info__amount" id="number-info">
+              <label for="number-info"></label>
+              <button type="button" class="btn info__btn">Додати в кошик</button>
+            </div>
+          </form>
+        </div>
+      </div>                                             
+    </div>
+	</section>
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="products-title">Пов'язані товари</h2>
+      <div class="products-wrapper">
+        <a href="product.html" class="card products-card">
+          <div class="overlay-wrapper">
+            <img class="card__img" src="img/card1.jpg" alt="">
+            <div class="card__overlay"></div>
+          </div>
+          <h3 class="card__title">
+            Футболка USA
+          </h3>
+          <span class="card__price">
+            $129
+          </span>
+        </a>
+        <a href="product.html" class="card products-card">
+          <div class="overlay-wrapper">
+            <img class="card__img" src="img/card2.jpg"alt="">
+            <div class="card__overlay"></div>
+          </div>
+          <h3 class="card__title">
+            Футболка USA
+          </h3>
+          <span class="card__price">
+            $129
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="block">
+          <a href="index.html" class="logo footer__logo"></a>
+          <div class="footer-links">
+            <span class="footer-links__copyright">© Усі права захищені</span>
+            <a href="#">Політика конфіденційності</a>
+            <a href="#">Публічна оферта</a>
+          </div>
+        </div>
+        <div class="block-menu">
+          <nav class="menu footer__menu">
+            <ul class="menu__list footer__menu_list">
+              <li class="menu__item"><a href="index.html" class="menu__link menu__link_activ">Головна</a></li>
+              <li class="menu__item"><a href="shop.html" class="menu__link">Магазин&#160;&#160;</a>
+                <ul class="submenu">
+                  <li><a class="submenu__link" href="shop.html">Пальто</a></li>
+                  <li><a class="submenu__link" href="shop.html">Світшоти</a></li>
+                  <li><a class="submenu__link" href="shop.html">Кардигани</a></li>
+                  <li><a class="submenu__link" href="shop.html">Толстовки</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a href="about.html" class="menu__link">Про нас</a></li>
+              <li class="menu__item"><a href="contacts.html" class="menu__link">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="block-social">
+          <div class="block-contacts">
+            <a href="tel:+380448235412" class="block-contacts__tel">+38 (044) 823-54-12</a>
+            <a href="mailto:hello@womazing.com" class="block-contacts__email">hello@womazing.com</a>
+          </div>
+          <div class="social">
+            <!--noindex-->
+            <a href="#" class="social__link" rel="nofollow noopener noreferrer" target="_blank">
+              <img src="img/social-icon1.svg" alt="Інстаграм">
+            </a>
+            <!--/noindex-->
+            <!--noindex-->
+            <a href="#" class="social__link" rel="nofollow noopener noreferrer" target="_blank">
+              <img src="img/social-icon2.svg" alt="Фейсбук">
+            </a>
+            <!--/noindex-->
+            <!--noindex-->
+            <a href="#" class="social__link" rel="nofollow noopener noreferrer" target="_blank">
+              <img src="img/social-icon3.svg" alt="Твітер">
+            </a>
+            <!--/noindex-->
+          </div>
+          <img src="img/visa-mastercard.svg" alt="" class="block-social__card">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/modernizr-3.5.0.min.js"></script>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
